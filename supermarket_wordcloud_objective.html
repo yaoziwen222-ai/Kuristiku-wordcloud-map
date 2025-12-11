@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ad3c72a468e585d9c64815316aca4f3c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ad3c72a468e585d9c64815316aca4f3c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ad3c72a468e585d9c64815316aca4f3c = L.map(
+                "map_ad3c72a468e585d9c64815316aca4f3c",
+                {
+                    center: [59.446362083996384, 24.86708469965041],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_586f5941aa30c84da833c2008a02b1af = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_586f5941aa30c84da833c2008a02b1af.addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var marker_92d0fd106af948d942b6e2994d414f26 = L.marker(
+                [59.440727357472404, 24.844636943480634],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_6397170a8ae3b7700db1d30261db955c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eMERE kauplus\u003c/div\u003e\n        \u003cdiv style=\u0027font-size:12px;color:#777;\u0027\u003eNo English reviews\u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_92d0fd106af948d942b6e2994d414f26.setIcon(div_icon_6397170a8ae3b7700db1d30261db955c);
+            
+    
+            var marker_7de692467405ca10d4e8ce432c7dcd22 = L.marker(
+                [59.44224624845503, 24.849773928241394],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_41f007ebce628b7da050cf48f4f4566f = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eA1000 T\u00e4hesaju\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003eprices\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003eamba\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eproducts\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003efind\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003espeak\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003erussian\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003enext\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003estores\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003egoods\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003echeap\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003erude\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eold\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003estaff\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003emuch\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003earrogant\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003ecash\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eregister\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003ebad\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003epeople\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eone\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_7de692467405ca10d4e8ce432c7dcd22.setIcon(div_icon_41f007ebce628b7da050cf48f4f4566f);
+            
+    
+            var marker_b762a8b7b0ed4c3e782b454142b4f278 = L.marker(
+                [59.44900667998366, 24.849831247969302],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_3067835926473c8d4a4089cead6084e0 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eGrossi toidukaubad\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003eamba\u003c/span\u003e \u003cspan style=\u0027font-size:20.88888888888889px;color:hsl(0, 80%, 41.11111111111111%);margin:1px;\u0027\u003ebuy\u003c/span\u003e \u003cspan style=\u0027font-size:20.88888888888889px;color:hsl(0, 80%, 41.11111111111111%);margin:1px;\u0027\u003eeven\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003eeverything\u003c/span\u003e \u003cspan style=\u0027font-size:17.77777777777778px;color:hsl(0, 80%, 52.22222222222222%);margin:1px;\u0027\u003etold\u003c/span\u003e \u003cspan style=\u0027font-size:17.77777777777778px;color:hsl(0, 80%, 52.22222222222222%);margin:1px;\u0027\u003eone\u003c/span\u003e \u003cspan style=\u0027font-size:16.22222222222222px;color:hsl(0, 80%, 57.77777777777778%);margin:1px;\u0027\u003edon\u003c/span\u003e \u003cspan style=\u0027font-size:16.22222222222222px;color:hsl(0, 80%, 57.77777777777778%);margin:1px;\u0027\u003edidn\u003c/span\u003e \u003cspan style=\u0027font-size:16.22222222222222px;color:hsl(0, 80%, 57.77777777777778%);margin:1px;\u0027\u003ereason\u003c/span\u003e \u003cspan style=\u0027font-size:16.22222222222222px;color:hsl(0, 80%, 57.77777777777778%);margin:1px;\u0027\u003ewent\u003c/span\u003e \u003cspan style=\u0027font-size:16.22222222222222px;color:hsl(0, 80%, 57.77777777777778%);margin:1px;\u0027\u003enormal\u003c/span\u003e \u003cspan style=\u0027font-size:16.22222222222222px;color:hsl(0, 80%, 57.77777777777778%);margin:1px;\u0027\u003esaid\u003c/span\u003e \u003cspan style=\u0027font-size:16.22222222222222px;color:hsl(0, 80%, 57.77777777777778%);margin:1px;\u0027\u003eprices\u003c/span\u003e \u003cspan style=\u0027font-size:16.22222222222222px;color:hsl(0, 80%, 57.77777777777778%);margin:1px;\u0027\u003eselection\u003c/span\u003e \u003cspan style=\u0027font-size:16.22222222222222px;color:hsl(0, 80%, 57.77777777777778%);margin:1px;\u0027\u003eproducts\u003c/span\u003e \u003cspan style=\u0027font-size:16.22222222222222px;color:hsl(0, 80%, 57.77777777777778%);margin:1px;\u0027\u003egoods\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003etoday\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003erude\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003esecurity\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eguard\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_b762a8b7b0ed4c3e782b454142b4f278.setIcon(div_icon_3067835926473c8d4a4089cead6084e0);
+            
+    
+            var marker_642f243c10aa6f134a9a058957303d35 = L.marker(
+                [59.44289527327116, 24.852966779556546],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_2ba0994196fe48ac5eaf96f210d8cb1f = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eLidl left\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003eamba\u003c/span\u003e \u003cspan style=\u0027font-size:21.666666666666668px;color:hsl(0, 80%, 38.33333333333333%);margin:1px;\u0027\u003elidl\u003c/span\u003e \u003cspan style=\u0027font-size:15.833333333333334px;color:hsl(0, 80%, 59.166666666666664%);margin:1px;\u0027\u003eself\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eitems\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eservice\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eprices\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003edelicious\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003eoften\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003echain\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003elocal\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003egoods\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003enormal\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003easked\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003elong\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003ecare\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003echeckout\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003econvenient\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003eproducts\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003ebought\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003echeckouts\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_642f243c10aa6f134a9a058957303d35.setIcon(div_icon_2ba0994196fe48ac5eaf96f210d8cb1f);
+            
+    
+            var marker_f6fb3bb8129a307d5379a73d8da4dc18 = L.marker(
+                [59.44294568882646, 24.856140050442473],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_82c76bba57641257e96d458525892273 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eT\u00e4hesaju Selver\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003eselver\u003c/span\u003e \u003cspan style=\u0027font-size:22.0px;color:hsl(0, 80%, 37.142857142857146%);margin:1px;\u0027\u003eservice\u003c/span\u003e \u003cspan style=\u0027font-size:20.0px;color:hsl(0, 80%, 44.285714285714285%);margin:1px;\u0027\u003eamba\u003c/span\u003e \u003cspan style=\u0027font-size:20.0px;color:hsl(0, 80%, 44.285714285714285%);margin:1px;\u0027\u003enext\u003c/span\u003e \u003cspan style=\u0027font-size:20.0px;color:hsl(0, 80%, 44.285714285714285%);margin:1px;\u0027\u003edoor\u003c/span\u003e \u003cspan style=\u0027font-size:18.0px;color:hsl(0, 80%, 51.42857142857143%);margin:1px;\u0027\u003eone\u003c/span\u003e \u003cspan style=\u0027font-size:18.0px;color:hsl(0, 80%, 51.42857142857143%);margin:1px;\u0027\u003eplace\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003ecompletely\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003equite\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003efood\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003eeverything\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003egoods\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003edidn\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003eback\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003eright\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003eterrible\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003emess\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eminutes\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003edon\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003ebother\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_f6fb3bb8129a307d5379a73d8da4dc18.setIcon(div_icon_82c76bba57641257e96d458525892273);
+            
+    
+            var marker_701d49d57194b85cf2417887c6e92411 = L.marker(
+                [59.45117717420428, 24.85819563456881],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_12a7eaaf2007696bf3328bd59c616861 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eMaxima Eesti O\u00dc\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003eamba\u003c/span\u003e \u003cspan style=\u0027font-size:15.297297297297298px;color:hsl(0, 80%, 61.08108108108108%);margin:1px;\u0027\u003emaxima\u003c/span\u003e \u003cspan style=\u0027font-size:15.297297297297298px;color:hsl(0, 80%, 61.08108108108108%);margin:1px;\u0027\u003eone\u003c/span\u003e \u003cspan style=\u0027font-size:14.162162162162161px;color:hsl(0, 80%, 65.13513513513513%);margin:1px;\u0027\u003egoods\u003c/span\u003e \u003cspan style=\u0027font-size:13.405405405405405px;color:hsl(0, 80%, 67.83783783783784%);margin:1px;\u0027\u003eservice\u003c/span\u003e \u003cspan style=\u0027font-size:13.405405405405405px;color:hsl(0, 80%, 67.83783783783784%);margin:1px;\u0027\u003eeverything\u003c/span\u003e \u003cspan style=\u0027font-size:13.405405405405405px;color:hsl(0, 80%, 67.83783783783784%);margin:1px;\u0027\u003eproducts\u003c/span\u003e \u003cspan style=\u0027font-size:13.405405405405405px;color:hsl(0, 80%, 67.83783783783784%);margin:1px;\u0027\u003erude\u003c/span\u003e \u003cspan style=\u0027font-size:13.027027027027028px;color:hsl(0, 80%, 69.1891891891892%);margin:1px;\u0027\u003eselection\u003c/span\u003e \u003cspan style=\u0027font-size:13.027027027027028px;color:hsl(0, 80%, 69.1891891891892%);margin:1px;\u0027\u003eopen\u003c/span\u003e \u003cspan style=\u0027font-size:13.027027027027028px;color:hsl(0, 80%, 69.1891891891892%);margin:1px;\u0027\u003eself\u003c/span\u003e \u003cspan style=\u0027font-size:13.027027027027028px;color:hsl(0, 80%, 69.1891891891892%);margin:1px;\u0027\u003estaff\u003c/span\u003e \u003cspan style=\u0027font-size:13.027027027027028px;color:hsl(0, 80%, 69.1891891891892%);margin:1px;\u0027\u003ecash\u003c/span\u003e \u003cspan style=\u0027font-size:12.64864864864865px;color:hsl(0, 80%, 70.54054054054055%);margin:1px;\u0027\u003eprices\u003c/span\u003e \u003cspan style=\u0027font-size:12.64864864864865px;color:hsl(0, 80%, 70.54054054054055%);margin:1px;\u0027\u003etime\u003c/span\u003e \u003cspan style=\u0027font-size:12.64864864864865px;color:hsl(0, 80%, 70.54054054054055%);margin:1px;\u0027\u003eregister\u003c/span\u003e \u003cspan style=\u0027font-size:12.27027027027027px;color:hsl(0, 80%, 71.89189189189189%);margin:1px;\u0027\u003emaxim\u003c/span\u003e \u003cspan style=\u0027font-size:12.27027027027027px;color:hsl(0, 80%, 71.89189189189189%);margin:1px;\u0027\u003ecome\u003c/span\u003e \u003cspan style=\u0027font-size:12.27027027027027px;color:hsl(0, 80%, 71.89189189189189%);margin:1px;\u0027\u003earound\u003c/span\u003e \u003cspan style=\u0027font-size:12.27027027027027px;color:hsl(0, 80%, 71.89189189189189%);margin:1px;\u0027\u003ecustomers\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_701d49d57194b85cf2417887c6e92411.setIcon(div_icon_12a7eaaf2007696bf3328bd59c616861);
+            
+    
+            var marker_2e2e42665d59e2f3b24e726903aa9148 = L.marker(
+                [59.44395397235419, 24.86288325107528],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_4da63a8961f9084fd5d6b91d8ab4ac5b = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003ePrisma Lasnam\u00e4e\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003elarge\u003c/span\u003e \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003eparking\u003c/span\u003e \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003eone\u003c/span\u003e \u003cspan style=\u0027font-size:22.25px;color:hsl(0, 80%, 36.25%);margin:1px;\u0027\u003eself\u003c/span\u003e \u003cspan style=\u0027font-size:20.5px;color:hsl(0, 80%, 42.5%);margin:1px;\u0027\u003eservice\u003c/span\u003e \u003cspan style=\u0027font-size:20.5px;color:hsl(0, 80%, 42.5%);margin:1px;\u0027\u003esidewalk\u003c/span\u003e \u003cspan style=\u0027font-size:20.5px;color:hsl(0, 80%, 42.5%);margin:1px;\u0027\u003edon\u003c/span\u003e \u003cspan style=\u0027font-size:20.5px;color:hsl(0, 80%, 42.5%);margin:1px;\u0027\u003eprisma\u003c/span\u003e \u003cspan style=\u0027font-size:18.75px;color:hsl(0, 80%, 48.75%);margin:1px;\u0027\u003ealways\u003c/span\u003e \u003cspan style=\u0027font-size:18.75px;color:hsl(0, 80%, 48.75%);margin:1px;\u0027\u003ecars\u003c/span\u003e \u003cspan style=\u0027font-size:18.75px;color:hsl(0, 80%, 48.75%);margin:1px;\u0027\u003eamba\u003c/span\u003e \u003cspan style=\u0027font-size:18.75px;color:hsl(0, 80%, 48.75%);margin:1px;\u0027\u003efind\u003c/span\u003e \u003cspan style=\u0027font-size:18.75px;color:hsl(0, 80%, 48.75%);margin:1px;\u0027\u003eeverything\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eneeded\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eselection\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003egoods\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003earound\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eput\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003ewill\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003edoor\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_2e2e42665d59e2f3b24e726903aa9148.setIcon(div_icon_4da63a8961f9084fd5d6b91d8ab4ac5b);
+            
+    
+            var marker_65b011efc14e97b88e4035adbda13d5a = L.marker(
+                [59.4413236246753, 24.865987341646004],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_7350f38db3743e568b2306eb341466f6 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eLasnam\u00e4e Centrum\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003ecenter\u003c/span\u003e \u003cspan style=\u0027font-size:18.0px;color:hsl(0, 80%, 51.42857142857143%);margin:1px;\u0027\u003eparking\u003c/span\u003e \u003cspan style=\u0027font-size:18.0px;color:hsl(0, 80%, 51.42857142857143%);margin:1px;\u0027\u003eshopping\u003c/span\u003e \u003cspan style=\u0027font-size:18.0px;color:hsl(0, 80%, 51.42857142857143%);margin:1px;\u0027\u003ecome\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003elot\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003eamba\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003eeverything\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003eforward\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003eroad\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003ephone\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eshops\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eservices\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eone\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003elarge\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eoften\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003ethings\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003elook\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eshop\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003estores\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003escan\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_65b011efc14e97b88e4035adbda13d5a.setIcon(div_icon_7350f38db3743e568b2306eb341466f6);
+            
+    
+            var marker_ffac141093939ed4e6d57e5b19e597ca = L.marker(
+                [59.449476135433294, 24.864696512170084],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_b5da24bb1f58d1492194aed14948f8ed = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eLinnam\u00e4e Konsum\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003eplace\u003c/span\u003e \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003eaverage\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003ecompared\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003eexpensive\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003eready\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003emade\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003esufficient\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003erange\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003egoods\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003edishes\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003eprice\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003eone\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003ebuilding\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003egrocery\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003eservice\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003emarkets\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003esalads\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eedible\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003ethanks\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eperson\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_ffac141093939ed4e6d57e5b19e597ca.setIcon(div_icon_b5da24bb1f58d1492194aed14948f8ed);
+            
+    
+            var marker_da369bcf588e95405d1fce463865535e = L.marker(
+                [59.4512443855591, 24.86381205678364],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_b8118367256c06e0e22786aed05471d5 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eRimi mini\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003erimi\u003c/span\u003e \u003cspan style=\u0027font-size:21.666666666666668px;color:hsl(0, 80%, 38.33333333333333%);margin:1px;\u0027\u003eeverything\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003ebought\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eshop\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eservice\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eproducts\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003enecessary\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003egoods\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eplace\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eprices\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003ecash\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eregister\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003esimply\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003estaff\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003ebig\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003elittle\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003ecozy\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eunexpectedly\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003edecent\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003echain\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_da369bcf588e95405d1fce463865535e.setIcon(div_icon_b8118367256c06e0e22786aed05471d5);
+            
+    
+            var marker_341a80b35f5f1482cf0158a0b9c1bad4 = L.marker(
+                [59.45019543477759, 24.86994428079631],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_6b7654e15199d0d7555cc06ea8d53f68 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eLinnam\u00e4e SuperAlko\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003eselection\u003c/span\u003e \u003cspan style=\u0027font-size:18.0px;color:hsl(0, 80%, 51.42857142857143%);margin:1px;\u0027\u003eservice\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eprices\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003esmall\u003c/span\u003e \u003cspan style=\u0027font-size:15.0px;color:hsl(0, 80%, 62.14285714285714%);margin:1px;\u0027\u003ecigarettes\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003ealcohol\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eselling\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003estrange\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003edefective\u003c/span\u003e \u003cspan style=\u0027font-size:13.0px;color:hsl(0, 80%, 69.28571428571429%);margin:1px;\u0027\u003eshop\u003c/span\u003e \u003cspan style=\u0027font-size:13.0px;color:hsl(0, 80%, 69.28571428571429%);margin:1px;\u0027\u003eliquor\u003c/span\u003e \u003cspan style=\u0027font-size:13.0px;color:hsl(0, 80%, 69.28571428571429%);margin:1px;\u0027\u003ealcoholic\u003c/span\u003e \u003cspan style=\u0027font-size:13.0px;color:hsl(0, 80%, 69.28571428571429%);margin:1px;\u0027\u003edon\u003c/span\u003e \u003cspan style=\u0027font-size:13.0px;color:hsl(0, 80%, 69.28571428571429%);margin:1px;\u0027\u003eelectronic\u003c/span\u003e \u003cspan style=\u0027font-size:12.0px;color:hsl(0, 80%, 72.85714285714286%);margin:1px;\u0027\u003ealmost\u003c/span\u003e \u003cspan style=\u0027font-size:12.0px;color:hsl(0, 80%, 72.85714285714286%);margin:1px;\u0027\u003eeverything\u003c/span\u003e \u003cspan style=\u0027font-size:12.0px;color:hsl(0, 80%, 72.85714285714286%);margin:1px;\u0027\u003esomething\u003c/span\u003e \u003cspan style=\u0027font-size:12.0px;color:hsl(0, 80%, 72.85714285714286%);margin:1px;\u0027\u003ecold\u003c/span\u003e \u003cspan style=\u0027font-size:12.0px;color:hsl(0, 80%, 72.85714285714286%);margin:1px;\u0027\u003eseems\u003c/span\u003e \u003cspan style=\u0027font-size:12.0px;color:hsl(0, 80%, 72.85714285714286%);margin:1px;\u0027\u003ereasonable\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_341a80b35f5f1482cf0158a0b9c1bad4.setIcon(div_icon_6b7654e15199d0d7555cc06ea8d53f68);
+            
+    
+            var marker_2335b4ef4a1c086970ea3e0272c7136e = L.marker(
+                [59.44288263461769, 24.877391831316928],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_61e62c9f910eb54abb09fc4f8e0bcea4 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eMustakivi Konsum\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003eservice\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003eone\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003esmall\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003ecustomer\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003ecash\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003ereally\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eplace\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003estuff\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eself\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003echeated\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eterrible\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eeverything\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003epoor\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003elot\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eassortment\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003ebad\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eregister\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003egrocery\u003c/span\u003e \u003cspan style=\u0027font-size:12.0px;color:hsl(0, 80%, 72.85714285714286%);margin:1px;\u0027\u003eapproached\u003c/span\u003e \u003cspan style=\u0027font-size:12.0px;color:hsl(0, 80%, 72.85714285714286%);margin:1px;\u0027\u003ecashiers\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_2335b4ef4a1c086970ea3e0272c7136e.setIcon(div_icon_61e62c9f910eb54abb09fc4f8e0bcea4);
+            
+    
+            var marker_cccb4b1579f05a208dcbb839f9e9fa7c = L.marker(
+                [59.44366630284484, 24.886255266696118],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_d78170f7c37bfca7b00e828bd3a2bff7 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eLidl right\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003elidl\u003c/span\u003e \u003cspan style=\u0027font-size:17.53846153846154px;color:hsl(0, 80%, 53.07692307692308%);margin:1px;\u0027\u003eselection\u003c/span\u003e \u003cspan style=\u0027font-size:17.53846153846154px;color:hsl(0, 80%, 53.07692307692308%);margin:1px;\u0027\u003epeople\u003c/span\u003e \u003cspan style=\u0027font-size:17.53846153846154px;color:hsl(0, 80%, 53.07692307692308%);margin:1px;\u0027\u003eservice\u003c/span\u003e \u003cspan style=\u0027font-size:16.46153846153846px;color:hsl(0, 80%, 56.92307692307692%);margin:1px;\u0027\u003edon\u003c/span\u003e \u003cspan style=\u0027font-size:16.46153846153846px;color:hsl(0, 80%, 56.92307692307692%);margin:1px;\u0027\u003ealways\u003c/span\u003e \u003cspan style=\u0027font-size:15.384615384615385px;color:hsl(0, 80%, 60.76923076923077%);margin:1px;\u0027\u003egoods\u003c/span\u003e \u003cspan style=\u0027font-size:15.384615384615385px;color:hsl(0, 80%, 60.76923076923077%);margin:1px;\u0027\u003eproducts\u003c/span\u003e \u003cspan style=\u0027font-size:15.384615384615385px;color:hsl(0, 80%, 60.76923076923077%);margin:1px;\u0027\u003esecurity\u003c/span\u003e \u003cspan style=\u0027font-size:15.384615384615385px;color:hsl(0, 80%, 60.76923076923077%);margin:1px;\u0027\u003eself\u003c/span\u003e \u003cspan style=\u0027font-size:14.307692307692308px;color:hsl(0, 80%, 64.61538461538461%);margin:1px;\u0027\u003eprices\u003c/span\u003e \u003cspan style=\u0027font-size:14.307692307692308px;color:hsl(0, 80%, 64.61538461538461%);margin:1px;\u0027\u003eknow\u003c/span\u003e \u003cspan style=\u0027font-size:14.307692307692308px;color:hsl(0, 80%, 64.61538461538461%);margin:1px;\u0027\u003ecart\u003c/span\u003e \u003cspan style=\u0027font-size:13.23076923076923px;color:hsl(0, 80%, 68.46153846153847%);margin:1px;\u0027\u003egone\u003c/span\u003e \u003cspan style=\u0027font-size:13.23076923076923px;color:hsl(0, 80%, 68.46153846153847%);margin:1px;\u0027\u003ewill\u003c/span\u003e \u003cspan style=\u0027font-size:13.23076923076923px;color:hsl(0, 80%, 68.46153846153847%);margin:1px;\u0027\u003eopen\u003c/span\u003e \u003cspan style=\u0027font-size:13.23076923076923px;color:hsl(0, 80%, 68.46153846153847%);margin:1px;\u0027\u003eclosed\u003c/span\u003e \u003cspan style=\u0027font-size:13.23076923076923px;color:hsl(0, 80%, 68.46153846153847%);margin:1px;\u0027\u003eguard\u003c/span\u003e \u003cspan style=\u0027font-size:13.23076923076923px;color:hsl(0, 80%, 68.46153846153847%);margin:1px;\u0027\u003ecustomer\u003c/span\u003e \u003cspan style=\u0027font-size:13.23076923076923px;color:hsl(0, 80%, 68.46153846153847%);margin:1px;\u0027\u003eeven\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_cccb4b1579f05a208dcbb839f9e9fa7c.setIcon(div_icon_d78170f7c37bfca7b00e828bd3a2bff7);
+            
+    
+            var marker_a06efb25b7086ae79d5108e681e036ed = L.marker(
+                [59.45294423247901, 24.8781883557976],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_14d141d60592aba6c40991b5f4878704 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eL\u00e4\u00e4nemere Selver\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003eselver\u003c/span\u003e \u003cspan style=\u0027font-size:21.666666666666668px;color:hsl(0, 80%, 38.33333333333333%);margin:1px;\u0027\u003esmall\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003egoods\u003c/span\u003e \u003cspan style=\u0027font-size:19.333333333333332px;color:hsl(0, 80%, 46.66666666666667%);margin:1px;\u0027\u003eeverything\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eproducts\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eexpensive\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eshop\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eservice\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eone\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eassortment\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eprice\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003esad\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003estaff\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003elarge\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eselection\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003efood\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eterrible\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003erecommend\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003ealways\u003c/span\u003e \u003cspan style=\u0027font-size:14.666666666666666px;color:hsl(0, 80%, 63.333333333333336%);margin:1px;\u0027\u003eself\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_a06efb25b7086ae79d5108e681e036ed.setIcon(div_icon_14d141d60592aba6c40991b5f4878704);
+            
+    
+            var marker_3392d0f6c2bc93ce54dae07a2b783966 = L.marker(
+                [59.45545008232243, 24.889922018366658],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_bff5d6260bd65c8a4a0b5b59bd915ada = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003ePriisle Selver\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003emachine\u003c/span\u003e \u003cspan style=\u0027font-size:18.75px;color:hsl(0, 80%, 48.75%);margin:1px;\u0027\u003eservice\u003c/span\u003e \u003cspan style=\u0027font-size:18.75px;color:hsl(0, 80%, 48.75%);margin:1px;\u0027\u003eshop\u003c/span\u003e \u003cspan style=\u0027font-size:18.75px;color:hsl(0, 80%, 48.75%);margin:1px;\u0027\u003emilk\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eeverything\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003eneed\u003c/span\u003e \u003cspan style=\u0027font-size:17.0px;color:hsl(0, 80%, 55.0%);margin:1px;\u0027\u003etime\u003c/span\u003e \u003cspan style=\u0027font-size:15.25px;color:hsl(0, 80%, 61.25%);margin:1px;\u0027\u003epeople\u003c/span\u003e \u003cspan style=\u0027font-size:15.25px;color:hsl(0, 80%, 61.25%);margin:1px;\u0027\u003ealways\u003c/span\u003e \u003cspan style=\u0027font-size:15.25px;color:hsl(0, 80%, 61.25%);margin:1px;\u0027\u003ethank\u003c/span\u003e \u003cspan style=\u0027font-size:15.25px;color:hsl(0, 80%, 61.25%);margin:1px;\u0027\u003esmall\u003c/span\u003e \u003cspan style=\u0027font-size:15.25px;color:hsl(0, 80%, 61.25%);margin:1px;\u0027\u003ecozy\u003c/span\u003e \u003cspan style=\u0027font-size:15.25px;color:hsl(0, 80%, 61.25%);margin:1px;\u0027\u003eclean\u003c/span\u003e \u003cspan style=\u0027font-size:15.25px;color:hsl(0, 80%, 61.25%);margin:1px;\u0027\u003etare\u003c/span\u003e \u003cspan style=\u0027font-size:15.25px;color:hsl(0, 80%, 61.25%);margin:1px;\u0027\u003ewaited\u003c/span\u003e \u003cspan style=\u0027font-size:15.25px;color:hsl(0, 80%, 61.25%);margin:1px;\u0027\u003eminutes\u003c/span\u003e \u003cspan style=\u0027font-size:15.25px;color:hsl(0, 80%, 61.25%);margin:1px;\u0027\u003efood\u003c/span\u003e \u003cspan style=\u0027font-size:15.25px;color:hsl(0, 80%, 61.25%);margin:1px;\u0027\u003estaff\u003c/span\u003e \u003cspan style=\u0027font-size:15.25px;color:hsl(0, 80%, 61.25%);margin:1px;\u0027\u003efloor\u003c/span\u003e \u003cspan style=\u0027font-size:13.5px;color:hsl(0, 80%, 67.5%);margin:1px;\u0027\u003elittle\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_3392d0f6c2bc93ce54dae07a2b783966.setIcon(div_icon_bff5d6260bd65c8a4a0b5b59bd915ada);
+            
+    
+            var marker_7983d3968bd62f5bc7c8d8d4ebcffbe7 = L.marker(
+                [59.44165811666571, 24.902729695498742],
+                {
+}
+            ).addTo(map_ad3c72a468e585d9c64815316aca4f3c);
+        
+    
+            var div_icon_6ba6661b2f462cc17a6428dca1c77701 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"background:transparent;text-align:center;line-height:1.1;\"\u003e\n        \u003cdiv style=\"font-weight:bold;font-size:13px;margin-bottom:4px;color:#222;\"\u003eRimi\u003c/div\u003e\n        \u003cspan style=\u0027font-size:24.0px;color:hsl(0, 80%, 30.0%);margin:1px;\u0027\u003erimi\u003c/span\u003e \u003cspan style=\u0027font-size:20.0px;color:hsl(0, 80%, 44.285714285714285%);margin:1px;\u0027\u003eeverything\u003c/span\u003e \u003cspan style=\u0027font-size:18.0px;color:hsl(0, 80%, 51.42857142857143%);margin:1px;\u0027\u003efood\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003equick\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003esuper\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003edelicious\u003c/span\u003e \u003cspan style=\u0027font-size:16.0px;color:hsl(0, 80%, 58.57142857142857%);margin:1px;\u0027\u003eselection\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003ehousehold\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003eplace\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003egroceries\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003emeat\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003ebought\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003echoice\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003econvenient\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003ebuffet\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003echeese\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003ebetter\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003emuch\u003c/span\u003e \u003cspan style=\u0027font-size:14.0px;color:hsl(0, 80%, 65.71428571428572%);margin:1px;\u0027\u003ereason\u003c/span\u003e \u003cspan style=\u0027font-size:12.0px;color:hsl(0, 80%, 72.85714285714286%);margin:1px;\u0027\u003ehonor\u003c/span\u003e \n    \u003c/div\u003e\n    ",
+  "iconSize": [220, 150],
+  "iconAnchor": [110, 75],
+  "className": "empty",
+});
+        
+    
+                marker_7983d3968bd62f5bc7c8d8d4ebcffbe7.setIcon(div_icon_6ba6661b2f462cc17a6428dca1c77701);
+            
+</script>
+</html>
